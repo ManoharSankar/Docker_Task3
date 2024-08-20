@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  nginx:
+    image: manoharms/custom-nginx:latest
+    ports:
+      - "8080:80"
+    volumes:
+      - ./nginx-data:/var/opt/nginx
+    restart: always
